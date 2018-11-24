@@ -1,2 +1,2 @@
 frontend: PORT=3000 yarn --cwd hangman-frontend start
-backend: PORT=4000 bundle exec rails s
+web:  bundle exec rails server PORT=4000
