@@ -12,15 +12,7 @@
 # end
 
 
-Word.all.each do |word|
-  if word.choice.length < 7
-    word.update(difficulty:"easy")
-  elsif word.choice.length > 6 && word.choice.length < 11
-    word.update(difficulty:"medium")
-  else
-    word.update(difficulty:"hard")
-  end
-end
+
 
 
 # Topscore.create(score:3, name:"WHOAGDY")
@@ -55,3 +47,13 @@ end
 # roar)
 #
 # newWords.each {|word| Word.create(choice: word)}
+
+# Word.all.each do |word|
+#   if word.choice.length < 7
+#     word.update(difficulty:"easy")
+#   elsif word.choice.length > 6 && word.choice.length < 11
+#     word.update(difficulty:"medium")
+#   else
+#     word.update(difficulty:"hard")
+#   end
+# end
