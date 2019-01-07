@@ -15,45 +15,44 @@
 
 
 
-# Topscore.create(score:3, name:"WHOAGDY")
+Topscore.create(score:3, name:"WHOAGDY")
 
-# newWords = %w(bride
-# ostracize
-# domestic
-# tract
-# appearance
-# acquaintance
-# grandmother
-# low
-# rent
-# performer
-# institution
-# solve
-# convert
-# cash
-# sugar
-# relaxation
-# civilization
-# urgency
-# exerciserelation
-# modernize
-# confront
-# basketball
-# current
-# idea
-# curl
-# pass
-# transfer
-# roar)
-#
-# newWords.each {|word| Word.create(choice: word)}
+newWords = %w(bride
+domestic
+tract
+appearance
+acquaintance
+grandmother
+low
+rent
+parade
+performer
+institution
+solve
+convert
+cash
+sugar
+relaxation
+civilization
+urgency
+modernize
+confront
+basketball
+current
+idea
+curl
+pass
+transfer
+roar)
 
-# Word.all.each do |word|
-#   if word.choice.length < 7
-#     word.update(difficulty:"easy")
-#   elsif word.choice.length > 6 && word.choice.length < 11
-#     word.update(difficulty:"medium")
-#   else
-#     word.update(difficulty:"hard")
-#   end
-# end
+newWords.each {|word| Word.create(choice: word)}
+
+Word.all.each do |word|
+  if word.choice.length < 7
+    word.update(difficulty:"easy")
+  elsif word.choice.length > 6 && word.choice.length < 11
+    word.update(difficulty:"medium")
+  else
+    word.update(difficulty:"hard")
+  end
+end
