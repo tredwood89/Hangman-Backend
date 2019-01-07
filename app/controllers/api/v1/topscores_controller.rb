@@ -1,4 +1,4 @@
-require 'Pry'
+
 class Api::V1::TopscoresController < ApplicationController
 
 
